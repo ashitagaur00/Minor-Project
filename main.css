@@ -1,0 +1,291 @@
+/* reset  */
+html {
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* particles.js container */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: #b61924; */
+  background-image: url('./stock3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+/* Tab Button */
+
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+.container {
+  position: absolute;
+  left: 5%;
+  /*right: 0; 
+  top: 5%; */
+}
+
+.description,
+.link {
+  font-family: 'Amatic SC', cursive;
+  text-align: start;
+  color: #fff;
+}
+
+
+.description {
+  font-size: 40px;
+}
+.description2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  
+  color: #fff;
+}
+.content
+{
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+  font-size: 20px;
+  width: 380px;
+  text-align: center;
+}
+.content2
+{
+  font-family: 'Amatic SC', cursive;
+  
+  color: #fff;
+  font-size: 20px;
+  padding: 50px;
+  text-align: center;
+}
+/* tab css */
+.tab {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+
+
+}
+
+.tab_btn {
+
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  /* text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  
+   */
+  background-color: #78c7d2;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: 'Amatic SC', cursive;
+
+
+}
+
+.tab_btn:hover {
+  background-color: #222;
+}
+
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Amatic SC', cursive;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #78c7d2;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
+}
+
+/* search page  */
+
+#searchbar {
+  margin: 50px 300px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  
+}
+
+input[type=text] {
+  width: 50%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus, 
+     change its width to 100% */
+/* input[type=text]:focus {
+  width: 70%;
+} */
+
+
+#list {
+  font-size: 1.5em;
+  top: 20%;
+}
+ol {
+  margin: 100px 350px ;
+  padding: 20px;
+  list-style-type:none;
+}
+ol li {
+  background:  #78c7d2;
+  margin: 20px;
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+
+
+}
+
+ol li:hover {
+  background-color: #222;
+border: 5px inset #78c7d2;
+  
+}
+
+
+
+
+.company {
+  display: list-item;
+  color: #fff;
+  /* width:400px;  */
+}
+
+/* dropdown
+.dropbtn {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: #78c7d2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  font-family: 'Amatic SC', cursive;
+
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #222;
+}
+
+
+ */
+
+  
+
+ .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.flex-container > div {
+ 
+ 
+  margin: 10px;
+
+}

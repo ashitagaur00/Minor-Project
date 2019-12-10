@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <meta name="description" content=" Search here !">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" media="screen" href="main.css">
+    <link rel="icon" href="./favicon2.png" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+
+    <!-- particles.js container -->
+
+    <div id="particles-js">
+
+
+
+        <input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="Search here..">
+
+        <!-- ordered list -->
+
+        <ol id='list'>
+
+            <a href="./TCS.html" style="text-decoration:none;">
+                <li class="company"> TCS</li>
+            </a>
+            <a href="./Wipro.html" style="text-decoration:none;">
+                <li class="company"> Wipro</li>
+            </a>
+
+
+            <a href="./Rel.html"
+                style="text-decoration:none;">
+                <li class="company"> Reliance Industries</li>
+            </a>
+
+            <a href="./Ttata.html"
+                style="text-decoration:none;">
+
+                <li class="company"> Tata Motors</li>
+            </a>
+            <a href="./Infosys.html" style="text-decoration:none;">
+
+
+                <li class="company"> Infosys</li>
+            </a>
+
+        </ol>
+
+    </div>
+
+    <!-- scripts -->
+    <script>
+        function search() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('company');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                } else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
+    <script src="particles.min.js"></script>
+    <script src="deepMerge.js"></script>
+
+    <script src="main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
